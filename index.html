@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Todo Manager</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="app">
+    <h1>Smart Todo Manager</h1>
+    <div class="dashboard">
+      <div class="box">
+        <p>Total</p>
+        <span id="total">0</span>
+      </div>
+      <div class="box success">
+        <p>Completed</p>
+        <span id="completed">0</span>
+      </div>
+      <div class="box warning">
+        <p>Pending</p>
+        <span id="pending">0</span>
+      </div>
+    </div>
+
+    <div class="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="Enter your task"/>
+      <select id="priority">
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+      <button onclick="addTask()">Add</button>
+    </div>
+
+    <div class="filters">
+      <button onclick="renderTasks('all')">All</button>
+      <button onclick="renderTasks('completed')">Completed</button>
+      <button onclick="renderTasks('pending')">Pending</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
