@@ -23,8 +23,4 @@ Project Files:-
 
 Purpose:-
 This project is created to improve frontend skills and understand basic JavaScript concepts.
-It is also useful for resume and internship applications.
-
-Author:-
-Lakshman
-B.Tech - Computer Science and Engineering
+Also useful for busy persons to give time their valuable time to do all tasks perfectly in the day.
